@@ -17,10 +17,9 @@ import org.eclipse.paho.client.mqttv3.MqttMessage;
 import org.eclipse.paho.client.mqttv3.persist.MemoryPersistence;
 
 // Class Overview:
-// - This class was designed by Oracle to facilitate MQTT protocols. It has been modified significantly to react
-//	 operate on Mosquitto Test Broker, and to react specifically to MQTT topics referencing: 'dog', 'cat', 'lizard',
-//   'reptile'
-// - This class allows the instantiation of 'MqttListener' objects that subscribe/publish to our preset MQTT Topics.
+// This class was designed by Oracle to facilitate MQTT protocols. It has been modified to operate on the Mosquitto
+// Test Broker, and to react specifically to MQTT topics referencing: 'dog', 'cat', 'lizard', and 'reptile'
+// This class allows the instantiation of 'MqttListener' objects that subscribe/publish to preset MQTT Topics.
 
 public class MqttListener implements MqttCallback, IMqttActionListener
 {
@@ -34,7 +33,6 @@ public class MqttListener implements MqttCallback, IMqttActionListener
     public static final int QUALITY_OF_SERVICE = 2;
     protected String name;
     protected String clientId;
-    public String diagnosticTest;
     protected MqttAsyncClient client;
     protected MemoryPersistence memoryPersistence;
     protected IMqttToken connectToken;

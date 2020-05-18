@@ -3,9 +3,9 @@ package main.java;
 import org.eclipse.paho.client.mqttv3.MqttException;
 
 // Class Overview:
-//    - This class implements Runnable in order to allow it to be used for multithreading. It creates the 3 MQTT drones
-//		(*[Cabin Sensor]*, *[Engine Sensor]*, and *[External Sensor]*). This keeps the IoT sensor data and posting on a
-//		thread by itself.
+// This class implements Runnable in order to allow it to be used for multithreading. It creates the 2 MQTTListeners,
+// mammal1 & mammal2, that listen over for topics 'cat' and 'dog'. This keeps the listeners referring to mammals on a
+// thread by itself.
 public class MammalListener implements Runnable
 {
     @Override

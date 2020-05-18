@@ -4,7 +4,7 @@ import org.eclipse.paho.client.mqttv3.IMqttActionListener;
 import org.eclipse.paho.client.mqttv3.IMqttToken;
 
 // Class Overview:
-// - This class is short Oracle helper that facilitates the asynchronous tokens needed for MQTT communication.
+// This class is a short Oracle helper that facilitates the asynchronous tokens needed for MQTT communication.
 
 public class MessageActionListener implements IMqttActionListener
 {
