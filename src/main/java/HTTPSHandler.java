@@ -9,8 +9,8 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 // Class Overview:
-// - This class is used to create an HTTPS connection when necessary to POST IoT sensor data, gateway heartbeats,
-//   or diagnostic test results. It is put into a separate class for clarity of code.
+// This class is used to create an HTTPS connection when necessary to POST data from an MqttListener object.
+// It is put into a separate class for clarity of code.
 
 public class HTTPSHandler
 {
